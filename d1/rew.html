@@ -12,12 +12,21 @@
 <body>
     <header>
         <h1>iti web site </h1>
-        <nav>
-            <a href="/html/">HTML</a> 
-            <a href="/css/">CSS</a> 
-            <a href="/js/">JavaScript</a> 
-            <a href="/python/">Python</a>
-        </nav>
+          
+        <nav class="w3-button" onclick="open()">
+            <a  >☰</a> 
+
+        </nav >
+        <div id="nava">
+                    <nav >
+                <a href="/html/">HTML</a> 
+                <a href="/css/">CSS</a> 
+                <a href="/js/">JavaScript</a> 
+                <a href="/python/">Python</a>
+            </nav>
+
+        </div>
+      
     </header>
     <main>
         <div class="flex-container">
@@ -25,15 +34,15 @@
 
                 <div class="box">
 
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos dicta, ullam at eius natus
+                    <p>    dolor, sit amet consectetur adipisicing elit. Quos dicta, ullam at eius natus
                         possimus officiis id nobis. Assumenda!</p>
 
                 </div>
 
                 <div class="online">
                     <h1>my page on line </h1>
-                    <img src="../resorses/cvimg.jpg" alt="">
-                    <img src="../resorses/cvimg.jpg" alt="">
+                    <img src="./cvimg.jpg" alt="">
+                    <img src="./cvimg.jpg" alt="">
                 </div>
 
                 <div class="video">
@@ -45,7 +54,7 @@
 
 
             </div>
-
+            
 
             <div class="flex-item-nos">
                 <h2>my profile </h2>
@@ -68,17 +77,44 @@
             </div>
             <div class="flex-item-right">
                 <div class="person">
-                    <img   src="../d2/cvimg.jpg"  >
+                    <img   src="./cvimg.jpg"  >
                 </div>
                 <dev class="news">
                     <p>
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magnam harum excepturi fugiat vero dolor! Impedit eius veritatis quia porro similique.
+                          ipsum dolor sit amet consectetur, adipisicing elit. Magnam harum excepturi fugiat vero dolor! Impedit eius veritatis quia porro similique.
                     </p>
                 </dev>
             </div>
         </div>
+
+
+        <!-- <div class="flex-item-left flex-item-down">
+
+            <div class="box">
+
+                <p>    dolor, sit amet consectetur adipisicing elit. Quos dicta, ullam at eius natus
+                    possimus officiis id nobis. Assumenda!</p>
+
+            </div>
+
+            <div class="online">
+                <h1>my page on line </h1>
+                <img src="./cvimg.jpg" alt="">
+                <img src="./cvimg.jpg" alt="">
+            </div>
+
+            <div class="video">
+                <video control>
+                    <source src="doncorleony.mp4">
+                </video>
+            </div>
+
+
+
+        </div> -->
     </main>
-    <footer class="footer">
+
+    <footer class="footer" id="footer">
         <h4>Copyrights © are reserved to ITI. </h4>
     </footer>
 
@@ -88,5 +124,13 @@
     <link rel="stylesheet" type="text/css" href="d1.css">
 
 </body>
-
+<script>
+    function  open() {
+      document.getElementById("footer").style.display = "block";
+    }
+    
+    // function w3_close() {
+    //   document.getElementById(".nav").style.display = "none";
+    // }
+    </script>
 </html>

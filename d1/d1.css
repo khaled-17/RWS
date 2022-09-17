@@ -42,15 +42,28 @@ nav a{
   }
   
   .flex-item-left {
-    background-color: #f1f1f1;
+    background-color: #c79797;
     padding: 10px;
     flex: calc(100%/3);
    }
+   .flex-item-nos {
+    background-color: dodgerblue;
+    padding: 10px;
+    flex: calc(100%/3);
+   }
+   .flex-item-right  {
+    background-color: rgb(120, 255, 30);
+    flex: calc(100%/3);
+    padding: 10px;
+
+   }
+
+
                  .box{
                     background-color: azure;
                     font-size: large;
-                    padding: 10px;
-                    text-align: left;
+                     text-align: left;
+                     
                  }
                     .online{
 
@@ -58,8 +71,8 @@ nav a{
                         margin: 100px;
                     }
                  .online img{
-                    height:100px;
-                    width: auto;
+                  width: 50%;
+                  height: auto;
  
 
                  }
@@ -78,23 +91,12 @@ nav a{
 
 
 
-   .flex-item-nos {
-    background-color: dodgerblue;
-    padding: 10px;
-    flex: 60%;
-    font-size: 20px;
-  }
+ 
 
 
 
 
-
-  .flex-item-right  {
-    background-color: rgb(120, 255, 30);
-    flex: calc(100%/3);
-    font-size: 20px;
-
-   }
+  
                         .person img{
                             border:solid ;
                             margin-top: 100px;
@@ -113,10 +115,34 @@ nav a{
                             width: 70%;
                         }
 
-   @media (max-width: 800px) {
-    /* .flex-container {
+
+
+.w3-button{
+  display: none;
+  text-align: left;
+}
+       #mySidebar{
+
+        
+       }                 
+@media (max-width:900px){
+   
+ .flex-item-nos {
+width: 100%;
+
+
+}
+
+}
+
+ /* .flex-container {
       flex-direction: column;
     } */
+
+   @media (max-width: 600px) {
+    .flex-container {
+      flex-direction: column;
+    }
 
     nav    {
       width: 100%;
@@ -130,20 +156,23 @@ nav a{
         float: none;
         width: 100%;
       }
-     
- 
-  }
+      
 
-  @media (max-width: 600px) {
-    .flex-item-nos {
-      width: 60%
-       
-     };
      .flex-item-left{
-      width: 40%;
-     }
+       /* display: none; */
+       order: 3;
+
  
+     }
+     nav{
+      display: none;
     }
+    .w3-button{
+      display: inline-block;
+
+    }
+    
+  }
 
    
      
