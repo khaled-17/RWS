@@ -66,11 +66,24 @@
   box-sizing: border-box;
 }
 
-h1 {
+.edu {
   font-size: 24px;
   text-align: center;
   color: #FAEBD7;
-  background-color: coral;
+  background-color: green;
 }
 
-/*# sourceMappingURL=style.css.map */
+.class_ACHEVMENT, .class_work {
+  font-size: 24px;
+  text-align: center;
+  color: #FAEBD7;
+  background-color: red;
+}
+
+.class_work {
+  background-color: #f1951c;
+}
+
+.row {
+  display: flex;
+}/*# sourceMappingURL=style.css.map */

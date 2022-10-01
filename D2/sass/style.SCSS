@@ -1,19 +1,56 @@
-@for $i from 1 through 16 {
+// varibols
+  $color1: green;
+  $color2: red;
+  $color3: #f1951c;
+  $color4: #58f11c;
+  $text: #FAEBD7;
+  
+  ///////////////////////
+    $fonsize_heder:24px;
+
+
+  // nesting 
+
+
+  @for $i from 1 through 16 {
     .col-#{$i} { width: 100%/16 * $i; }
   }
   *{
     box-sizing:border-box;
   }
 
-  @mixin headerElement{
-     font-size: 24px;
+
+// mixin
+
+  @mixin headerElement($fonsize,$text,$bg){
+     font-size:$fonsize;
      text-align: center;
-     color:#FAEBD7;
-     background-color: coral
+     color:$text;
+     background-color: $bg
 
 
   }
-  h1{
-@include headerElement;
+  .edu{
+@include headerElement($fonsize_heder,$text,$color1);
 
   }
+  .class_ACHEVMENT{
+@include headerElement($fonsize_heder,$text,$color2);
+
+  }
+
+
+// inhertens 
+
+  .class_work{
+// @include headerElement($fonsize_heder,$text,$color3);
+ @extend .class_ACHEVMENT;
+     background-color: $color3
+
+
+  }
+
+    .row{
+      display: flex;
+      
+      }
