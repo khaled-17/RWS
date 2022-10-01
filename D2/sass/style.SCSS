@@ -1,3 +1,19 @@
-body{
-    background-color: brown;
-}
+@for $i from 1 through 16 {
+    .col-#{$i} { width: 100%/16 * $i; }
+  }
+  *{
+    box-sizing:border-box;
+  }
+
+  @mixin headerElement{
+     font-size: 24px;
+     text-align: center;
+     color:#FAEBD7;
+     background-color: coral
+
+
+  }
+  h1{
+@include headerElement;
+
+  }
