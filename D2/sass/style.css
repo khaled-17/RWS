@@ -66,6 +66,14 @@
   box-sizing: border-box;
 }
 
+.myname {
+  font-size: 24px;
+  text-align: center;
+  color: #FAEBD7;
+  background-color: #FAEBD7;
+  color: #000;
+}
+
 .edu {
   font-size: 24px;
   text-align: center;
@@ -86,4 +94,86 @@
 
 .row {
   display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.contaner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+img {
+  border-radius: 50%;
+  width: 20%;
+  height: auto;
+}
+
+.spase1 {
+  background-color: #58f11c;
+  height: 20px;
+  width: 100px;
+}
+
+.spase2 {
+  background-color: #ce4f4f;
+  height: 20px;
+  width: 100px;
+}
+
+.spase3 {
+  background-color: #a40ee0;
+  height: 20px;
+  width: 100px;
+}
+
+.footer {
+  background-color: #0f0d0f;
+}
+
+.icon {
+  display: flex;
+  font-size: 25px;
+  color: #e76161;
+  flex-direction: column;
+}
+
+i {
+  border: 10px;
+  padding: 3px;
+}
+
+.container {
+  height: 10px;
+  width: 90%;
+  background-color: #ddd;
+}
+
+.skills {
+  padding: 0;
+  margin: 0;
+  height: 10px;
+  text-align: right;
+  color: white;
+}
+
+h6, h4 {
+  color: #e76161;
+  padding: 2;
+  margin: 0;
+}
+
+.en {
+  width: 70%;
+  background-color: #04AA6D;
+}
+
+.ar {
+  width: 90%;
+  background-color: #04AA6D;
+}
+
+.foterpart {
+  padding: 0px 10px 0px 10px;
 }/*# sourceMappingURL=style.css.map */

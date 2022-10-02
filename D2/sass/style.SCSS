@@ -3,11 +3,14 @@
   $color2: red;
   $color3: #f1951c;
   $color4: #58f11c;
+  $color5: #000;
   $text: #FAEBD7;
   
   ///////////////////////
     $fonsize_heder:24px;
-
+  $background-color: $color4;
+    $height: 20px ;
+    $width: 100px;
 
   // nesting 
 
@@ -30,6 +33,11 @@
 
 
   }
+    .myname{
+      @include headerElement($fonsize_heder,$text,$text);
+    color:$color5 ;
+       }
+        
   .edu{
 @include headerElement($fonsize_heder,$text,$color1);
 
@@ -52,5 +60,93 @@
 
     .row{
       display: flex;
-      
+        justify-content: center;
+  align-items:flex-start ;
+
+
       }
+      .contaner{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+        
+        }
+img {
+  border-radius: 50%;
+  width: 20%;
+  height: auto;
+}
+
+
+
+
+  
+
+  @mixin spase ($background-color,$height,$width){
+    
+     background-color: $background-color;
+    height: $height ;
+    width: $width;
+    }
+       .spase1{
+      @include spase ($background-color,$height,$width);
+        }
+       .spase2{
+      @include spase (#ce4f4f,$height,$width);
+        }
+       .spase3{
+      @include spase (#a40ee0,$height,$width);
+        }
+
+  .footer{
+         background-color: #0f0d0f; 
+
+          }
+
+.icon{
+  display: flex;
+
+     font-size:25px;
+      color: #e76161;
+        flex-direction: column;
+ 
+    }
+      i{
+        border:10px;
+        padding: 3px;
+        
+        }
+
+
+
+.container {
+  height: 10px;
+  width: 90%;
+  background-color: #ddd;
+}
+
+.skills {
+  padding: 0;
+  margin: 0;
+    height: 10px;
+  text-align: right;
+   color: white;
+}
+  h6,h4{
+          color: #e76161;
+
+    padding: 2;
+  margin: 0;
+    }
+
+.en {
+  width: 70%; 
+  background-color: #04AA6D;}  
+.ar {
+  width: 90%; 
+  background-color: #04AA6D;}  
+
+  .foterpart{
+    padding: 0px 10px 0px 10px;
+    }
